@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: '/awesome-todo',
   assetPrefix: '/awesome-todo/',
-  distDir: 'dist',
 };
 
 export default nextConfig;

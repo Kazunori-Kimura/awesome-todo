@@ -13,12 +13,12 @@ This is a **static-export Next.js 16** app configured for GitHub Pages deploymen
 
 ```bash
 npm run dev          # Development server on localhost:3000
-npm run build        # Static export to /dist directory  
+npm run build        # Static export to /out directory  
 npm run start        # Serve production build locally
 npm run lint         # ESLint with Next.js config
 ```
 
-**Important**: This project builds to `/dist` (not `.next`) for static hosting compatibility.
+**Important**: This project uses static export and builds to `/out` for GitHub Pages compatibility.
 
 ## Styling Patterns
 
@@ -115,15 +115,15 @@ src/components/
 
 ### GitHub Actions Setup
 - **Trigger**: Automatic deployment on `main` branch push/merge
-- **Build Process**: `npm run build` → static files to `/dist`
-- **Deploy Target**: GitHub Pages from `/dist` directory
+- **Build Process**: `npm run build` → static files to `/out`
+- **Deploy Target**: GitHub Pages from `/out` directory
 - **Asset Paths**: All assets must work with `/awesome-todo` base path
 
 ### Expected Workflow File
 Create `.github/workflows/deploy.yml` to:
 1. Install dependencies (`npm ci`)
 2. Run build (`npm run build`) 
-3. Deploy `/dist` to `gh-pages` branch
+3. Deploy `/out` to GitHub Pages
 4. Enable GitHub Pages from `gh-pages` branch
 
 ## Quick Start for New Features
