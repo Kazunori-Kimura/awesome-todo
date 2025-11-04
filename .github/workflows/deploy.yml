@@ -33,9 +33,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        with:
-          # GitHub Pages 設定を自動検出
-          static_site_generator: next
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -51,6 +48,20 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
+
+      - name: List build output
+        run: |
+          echo "Contents of current directory:"
+          ls -la
+          echo "Checking for out directory:"
+          if [ -d "out" ]; then
+            echo "✅ out directory exists"
+            ls -la out/
+          else
+            echo "❌ out directory does not exist"
+            echo "Available directories:"
+            find . -type d -name ".*" -prune -o -type d -print | head -20
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

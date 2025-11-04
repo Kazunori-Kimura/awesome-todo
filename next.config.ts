@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: '/awesome-todo',
   assetPrefix: '/awesome-todo/',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  }
 };
 
 export default nextConfig;
