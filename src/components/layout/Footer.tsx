@@ -11,7 +11,7 @@ export const Footer = () => {
           
           <div className="flex items-center justify-center sm:justify-end gap-4">
             <a
-              href="https://github.com/kazunorikimura/awesome-todo"
+              href="https://github.com/kazunori-kimura/awesome-todo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors"

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://kazunorikimura.github.io'),
+  metadataBase: new URL('https://kazunori-kimura.github.io'),
   alternates: {
     canonical: '/awesome-todo',
   },

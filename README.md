@@ -88,7 +88,7 @@ src/components/
 ### インストール
 ```bash
 # リポジトリをクローン
-git clone https://github.com/your-username/awesome-todo.git
+git clone https://github.com/kazunori-kimura/awesome-todo.git
 cd awesome-todo
 
 # 依存関係をインストール
@@ -115,7 +115,7 @@ npm run lint         # ESLint でコードをチェック
 4. GitHub Pages で公開
 
 ### デプロイURL
-- **本番**: `https://your-username.github.io/awesome-todo`
+- **本番**: `https://kazunori-kimura.github.io/awesome-todo`
 - **開発**: `http://localhost:3000`
 
 ## 🔧 設定ファイル
